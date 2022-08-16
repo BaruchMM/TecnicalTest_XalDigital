@@ -40,20 +40,20 @@ create table `VUELOS` (
 	`ID_AEROLINEA` int NOT NULL,
 	`ID_AEROPUERTO` int NOT NULL,
     `ID_MOVIMIENTO` int NOT NULL,
-    `DIA` DATE NOT NULL,
+    `DIA` date NOT NULL,
     foreign key (ID_AEROLINEA) references AEROLINEA(ID_AEROLINEA),
     foreign key (ID_AEROPUERTO) references AEROPUERTO(ID_AEROPUERTO),
     foreign key (ID_MOVIMIENTO) references MOVIMIENTOS(ID_MOVIMIENTO)
 );
 
 insert into VUELOS (ID_AEROLINEA, ID_AEROPUERTO, ID_MOVIMIENTO, DIA)
-values	(1,1,1,'2021-05-02'),
-		(2,1,1,'2021-05-02'),
-		(3,2,2,'2021-05-02'),
-		(4,3,2,'2021-05-02'),
-		(1,3,2,'2021-05-02'),
-		(2,1,1,'2021-05-02'),
-		(2,3,1,'2021-05-04'),
-		(3,4,1,'2021-05-04'),
-		(3,4,1,'2021-05-04');
+values	(1, 1, 1,'2021-05-02'),
+		(2, 1, 1,'2021-05-02'),
+		(3, 2, 2,'2021-05-02'),
+		(4, 3, 2,'2021-05-02'),
+		(1, 3, 2,'2021-05-02'),
+		(2, 1, 1,'2021-05-02'),
+		(2, 3, 1,'2021-05-04'),
+		(3, 4, 1,'2021-05-04'),
+		(3, 4, 1,'2021-05-04');
 
